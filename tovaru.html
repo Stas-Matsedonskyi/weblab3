@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінка товарів</title>
+    <!-- Підключення CSS для стилізації -->
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <header>
+        <h1>Ваш магазин спортивного одягу і взуття</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="tovaru.html">Каталог</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+<!--filters and sort-->
+     <div class="filter-container">
+        <div class="filters">
+        <label for="category-select" style="color: white;">Категорія:</label>
+        <select id="category-select" class="filter-button">
+            <option value="all">Усі</option>
+            <option value="category1" class="f">Чоловічий</option>
+            <option value="category2">Жіночий</option>
+        </select>
+
+        <label for="sort-select" class="filter-text">Сортування:</label>
+        <select id="sort-select" class="filter-button">
+            <option value="price-asc">Ціна (за зростанням)</option>
+            <option value="price-desc">Ціна (за спаданням)</option>
+        </select>
+    </div>
+
+    </div>
+    
+<!--goods-->
+    <div class="products">
+         <div class="product" data-category="category1" data-price="1500">
+            <img src="tov1.jpg">
+            <h2>Кросівки Adidas чоловічі</h2>
+            <p>1 500 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+         <div class="product" data-category="category1" data-price="4500">
+            <img src="tov2.webp">
+            <h2>Комплект термобілизни</h2>
+            <p>4 500 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+         <div class="product" data-category="category2" data-price="500">
+            <img src="tov3.jpg">
+            <h2>Спортивний костюм жіночий</h2>
+            <p>500 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+         <div class="product" data-category="category1" data-price="190">
+            <img src="tov4.jpg">
+            <h2>Спортивний костюм чоловічий</h2>
+            <p>1 890 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+         <div class="product" data-category="category1" data-price="2500">
+            <img src="tov5.jpg">
+            <h2>Літній спортивний костюм</h2>
+            <p>2 500 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+         <div class="product" data-category="category2" data-price="7500">
+            <img src="tov6.jpg">
+            <h2>Спортивний костюм жіночий</h2>
+            <p>7 500 грн.</p>
+            <div class="product-details">
+                <label for="quantity-1">Кількість:</label>
+                <div class="quantity-control">
+                    <button class="quantity-button minus">-</button>
+                    <input type="number" id="quantity-1" class="quantity" value="1" min="1">
+                    <button class="quantity-button plus">+</button>
+                </div>
+            </div>
+            <button class="add-to-cart">Додати до корзини</button>
+        </div>
+    </div>
+
+<!--cart -->
+<div id="cart-icon" class="cart-icon">🛒
+  <span id="cart-count" class="cart-icon-text">0</span>
+</div>
+
+<div id="cart-container" class="cart-container">
+  <div id="cart">
+    <div id="cart-items">
+      <!-- Вміст корзини буде автоматично додаватися тут -->
+    </div>
+    <div class="cart-total">
+      <p>Загальна сума:  <span id="cart-total-amount">$0.00</span></p>
+    </div>
+    <button id="clear-cart" class="cart-button">Очистити корзину</button>
+  </div>
+</div>
+
+
+
+<script src="cart.js"></script>
+</body>
+</html>

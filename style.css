@@ -1,0 +1,529 @@
+/* Стилізація головної сторінки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 800px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.slide-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.sportswear-info {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-block {
+    margin-bottom: 20px;
+}
+
+.info-block h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Стилізація категорій товарів */
+.categories {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.category-icon {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.category-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Стилізація заголовків категорій */
+.category h3 {
+    font-size: 24px;
+    margin: 0 24px;
+}
+
+/* Стилізація інформації категорій */
+.category-info {
+    flex: 1;
+}
+
+/* Стилізація розділів */
+.section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section .info-block {
+    flex: 1;
+}
+
+/* Стилі для смартфонів */
+/* Стилі для смартфонів */
+@media (max-width: 480px) {
+    /* Заголовок головної сторінки */
+    header h1 {
+        font-size: 20px; /* Зменшуємо розмір шрифту для смартфонів */
+    }
+
+    /* Навігація */
+    nav ul {
+        text-align: center; /* Вирівнюємо по центру для смартфонів */
+    }
+
+    nav ul li {
+        display: block; /* Робимо пункти меню блоковими на смартфонах */
+        margin-bottom: 10px; /* Додаємо відступ між пунктами */
+    }
+
+    /* Слайдер */
+    .slider {
+        height: auto; /* Змінюємо висоту слайдера на автоматичну */
+    }
+    .category-icon img {
+        height: auto;
+        padding: 25px 10px 10px 1px;
+    }
+
+    /* Інформація про спортивний одяг і взуття */
+    .sportswear-info {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    /* Категорії товарів */
+    .categories {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .category h3 {
+        font-size: 18px; /* Зменшуємо розмір шрифту для назв категорій */
+        margin: 0 12px; /* Зменшуємо відступи між заголовками і текстом */
+    }
+}
+
+
+/* Стилі для планшетів */
+@media (min-width: 481px) and (max-width: 1024px) {
+    /* Заголовок головної сторінки */
+    header h1 {
+        font-size: 28px; /* Збільшуємо розмір шрифту для планшетів */
+    }
+
+    /* Навігація */
+    nav ul li {
+        margin-bottom: 15px; /* Збільшуємо відступ між пунктами меню */
+    }
+.category-icon img {
+        height: auto;
+        padding: 25px 10px 10px 1px;
+    }
+    /* Слайдер */
+    .slider {
+        height: auto; /* Змінюємо висоту слайдера на автоматичну */
+    }
+
+    /* Інформація про спортивний одяг і взуття */
+    .sportswear-info {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    /* Категорії товарів */
+    .categories {
+        margin: 15px;
+        padding: 15px;
+    }
+}
+
+/* Стилі для малих екранів ноутбуків */
+@media (min-width: 1025px) and (max-width: 1366px) {
+    /* Заголовок головної сторінки */
+    header h1 {
+        font-size: 32px; /* Збільшуємо розмір шрифту для малих екранів ноутбуків */
+    }
+
+    /* Навігація */
+    nav ul li {
+        margin-bottom: 20px; /* Збільшуємо відступ між пунктами меню */
+    }
+
+    /* Слайдер */
+    .slider {
+        height: auto; /* Змінюємо висоту слайдера на автоматичну */
+    }
+.category-icon img {
+        height: auto;
+        padding: 25px 10px 10px 1px;
+    }
+    /* Інформація про спортивний одяг і взуття */
+    .sportswear-info {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    /* Категорії товарів */
+    .categories {
+        margin: 20px;
+        padding: 20px;
+    }
+}
+
+
+
+
+
+/* Стилі для фільтрів */
+/* Огородження фільтрів */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Колір фону */
+  padding: 10px;
+  border-radius: 5px; /* Закруглені кути */
+  margin-top: 20px;
+}
+
+/* Стилізація кнопок фільтрів */
+.filter-button {
+  background-color: #4CAF50; /* Колір кнопок */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Закруглені кути */
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Стилізація тексту в фільтрі */
+.filter-text {
+  color: white; /* Колір тексту */
+  margin-right: 10px;
+}
+
+/* Стилізація при наведенні курсора миші на фільтр */
+.filter-button:hover {
+  background-color: #45a049; /* Зміна колору при наведенні */
+}
+
+
+/* Стилі для контейнера товарів */
+.products {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Один товар на кожен стовпчик */
+  gap: 10px; /* Відступи між товарами */
+}
+
+/* Стилізація товару */
+.product {
+  width: 100%-20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* Стилізація зображення товару */
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Стилізація назви товару */
+.product h2 {
+    font-size: 18px;
+}
+
+/* Стилізація ціни товару */
+.product p {
+    font-size: 16px;
+}
+
+/* Стилізація блоку для кількості */
+.product .product-details {
+    margin: 10px 0;
+}
+
+/* Стилізація кнопок "Додати до корзини" і "Кількість" */
+.product button.add-to-cart {
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.product .quantity-control {
+    display: flex;
+    align-items: center;
+}
+
+.product .quantity-control label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.product .quantity-control .quantity-button {
+    background-color: lightgreen;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 38%;
+}
+
+.product .quantity-control input.quantity {
+    width: 50px;
+    height: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.product .quantity-control .quantity-button.plus {
+     margin-left: 1px;
+}
+
+/* Змінюємо вигляд кнопок при наведенні мишки */
+.product .quantity-control .quantity-button:hover,
+.product button.add-to-cart:hover {
+    background-color: #0056b3;
+}
+
+
+/* Стилі для кнопок сортування */
+.sort-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sort-buttons button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.sort-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.sort-buttons select {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Стилі для іконки корзини */
+.cart-icon {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 30px;
+  background: #4169E1; /* Королівський синій */
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.cart-icon-text {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffdb58; /* Жовтий колір для виділення */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); /* Тінь тексту */
+}
+
+.cart-icon:hover + .cart-container,
+.cart-container:hover {
+  display: block;
+}
+
+/* Стилі для контейнера корзини */
+.cart-container {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 900px;
+  z-index: 1;
+  transition: display 0.3s;
+}
+
+/* Оновлені стилі для елементів товару в корзині */
+.cart-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-items:hover {
+  display: block;
+}
+
+#cart-items img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.cart-items-details {
+  flex-grow: 1;
+}
+
+.cart-item-name {
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; /* Колір назви товару */
+}
+
+.cart-item-price {
+   margin-right: 10px;
+  font-size: 16px;
+  color: #f06292; /* Колір ціни */
+}
+
+.cart-item-quantity {
+   margin-right: 10px;
+  width: 80px;
+  text-align: center;
+  align-items: center;
+}
+
+.cart-item-quantity-input {
+  width: 30px;
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.cart-total {
+  font-size: 16px;
+  font-weight: bold;
+   margin-right: 20px;
+   margin-top: 15px;
+   text-align: center;
+  color: royalblue; /* Колір ціни */
+}
+
+.cart-items-remove {
+  background: #f1556c;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-items-remove:hover {
+  background: #e0495a;
+}
+
+/* Стилі для кнопок у корзині */
+.cart-button,.remove-from-cart {
+  background: #4169E1; /* Королівський синій */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s;
+}
+
+.cart-button:hover,.remove-from-cart:hover {
+  background: #3554C2; /* Темніший відтінок королівського синього при наведенні */
+}
